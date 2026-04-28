@@ -1,0 +1,13 @@
+/Users/dinesh/Documents/workspace/ai_projects/transaction_categoriser/src/main/java/com/example/transactioncategoriser/TransactionCategoriserApplication.java
+/Users/dinesh/Documents/workspace/ai_projects/transaction_categoriser/src/main/java/com/example/transactioncategoriser/config/AppConfig.java
+/Users/dinesh/Documents/workspace/ai_projects/transaction_categoriser/src/main/java/com/example/transactioncategoriser/config/GeminiProperties.java
+/Users/dinesh/Documents/workspace/ai_projects/transaction_categoriser/src/main/java/com/example/transactioncategoriser/controller/TransactionController.java
+/Users/dinesh/Documents/workspace/ai_projects/transaction_categoriser/src/main/java/com/example/transactioncategoriser/model/AnalysisResult.java
+/Users/dinesh/Documents/workspace/ai_projects/transaction_categoriser/src/main/java/com/example/transactioncategoriser/model/CategorisedTransaction.java
+/Users/dinesh/Documents/workspace/ai_projects/transaction_categoriser/src/main/java/com/example/transactioncategoriser/model/CategorySummary.java
+/Users/dinesh/Documents/workspace/ai_projects/transaction_categoriser/src/main/java/com/example/transactioncategoriser/model/MerchantSummary.java
+/Users/dinesh/Documents/workspace/ai_projects/transaction_categoriser/src/main/java/com/example/transactioncategoriser/model/TransactionRecord.java
+/Users/dinesh/Documents/workspace/ai_projects/transaction_categoriser/src/main/java/com/example/transactioncategoriser/model/UploadViewModel.java
+/Users/dinesh/Documents/workspace/ai_projects/transaction_categoriser/src/main/java/com/example/transactioncategoriser/service/GeminiCategorisationService.java
+/Users/dinesh/Documents/workspace/ai_projects/transaction_categoriser/src/main/java/com/example/transactioncategoriser/service/PdfStatementParser.java
+/Users/dinesh/Documents/workspace/ai_projects/transaction_categoriser/src/main/java/com/example/transactioncategoriser/service/TransactionAnalysisService.java
