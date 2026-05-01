@@ -26,8 +26,20 @@ public class GameSession {
         return board;
     }
 
+    public boolean isCellEmpty(int position) {
+        return board[position] == '-';
+    }
+
+    public void placeMark(int position, char playerMark) {
+        board[position] = playerMark;
+    }
+
     public List<AgentExperience> getExperiences() {
         return experiences;
+    }
+
+    public void recordExperience(AgentExperience experience) {
+        experiences.add(experience);
     }
 
     public GameStatus getStatus() {

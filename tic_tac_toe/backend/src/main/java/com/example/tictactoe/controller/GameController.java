@@ -3,7 +3,7 @@ package com.example.tictactoe.controller;
 import com.example.tictactoe.model.AgentStats;
 import com.example.tictactoe.model.GameResponse;
 import com.example.tictactoe.model.MoveRequest;
-import com.example.tictactoe.service.LearningAgentService;
+import com.example.tictactoe.service.GameService;
 import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,29 +15,29 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/game")
 public class GameController {
-    private final LearningAgentService learningAgentService;
+    private final GameService gameService;
 
-    public GameController(LearningAgentService learningAgentService) {
-        this.learningAgentService = learningAgentService;
+    public GameController(GameService gameService) {
+        this.gameService = gameService;
     }
 
     @PostMapping("/new")
     public GameResponse startGame() {
-        return learningAgentService.startGame();
+        return gameService.startGame();
     }
 
     @GetMapping("/{sessionId}")
     public GameResponse getGame(@PathVariable String sessionId) {
-        return learningAgentService.getGame(sessionId);
+        return gameService.getGame(sessionId);
     }
 
     @PostMapping("/{sessionId}/move")
     public GameResponse playMove(@PathVariable String sessionId, @Valid @RequestBody MoveRequest moveRequest) {
-        return learningAgentService.playHumanMove(sessionId, moveRequest.position());
+        return gameService.playHumanMove(sessionId, moveRequest.position());
     }
 
     @GetMapping("/stats")
     public AgentStats getStats() {
-        return learningAgentService.getStats();
+        return gameService.getStats();
     }
 }
