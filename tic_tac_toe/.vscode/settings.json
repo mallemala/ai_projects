@@ -1,0 +1,14 @@
+{
+    "maven.view": "hierarchical",
+    "maven.terminal.favorites": [
+        {
+            "command": "spring-boot:run",
+            "debug": false
+        },
+        {
+            "command": "clean install",
+            "debug": false
+        }
+    ],
+    "java.compile.nullAnalysis.mode": "automatic"
+}
