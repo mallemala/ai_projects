@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+<section class="hero-panel" th:fragment="hero">
+    <div class="hero-copy">
+        <span class="eyebrow">Gemini-powered spending intelligence</span>
+        <h1>Upload bank transactions and see where your money really goes.</h1>
+        <p>
+            Drop in a PDF bank statement, let Gemini extract and classify each transaction,
+            and explore totals by category and by merchant in a clean dashboard.
+        </p>
+        <div class="hero-badges">
+            <span>PDF upload</span>
+            <span>AI categorisation</span>
+            <span>Store-level drill-down</span>
+        </div>
+    </div>
+
+    <form class="upload-card" method="post" enctype="multipart/form-data" th:action="@{/analyse}">
+        <label class="upload-zone" for="file">
+            <input id="file" name="file" type="file" accept=".pdf,application/pdf" required>
+            <span class="upload-title">Choose a PDF bank statement</span>
+            <span class="upload-text">Upload a readable statement PDF and the app will extract transaction rows automatically.</span>
+        </label>
+        <button class="primary-button" type="submit">Analyse Transactions</button>
+        <p class="helper-text">Set <code>GEMINI_API_KEY</code> before running the app.</p>
+    </form>
+</section>
+</body>
+</html>
